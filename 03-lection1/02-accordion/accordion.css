@@ -1,5 +1,4 @@
 /* Стилизация аккордеона */
-<<<<<<< HEAD
 .body {
     font-family: Inter;
     font-style: normal;
@@ -38,6 +37,4 @@
 
 .accordion__item[open] > .accordion__summary {
     color: #212429;
-}
-=======
->>>>>>> b9a8878c5ca16fd9079b69d25876cf92dd377a77
+ }
