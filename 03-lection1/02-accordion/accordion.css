@@ -1,5 +1,5 @@
 /* Стилизация аккордеона */
-.body {
+.accordion {
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
@@ -20,7 +20,7 @@
     margin-bottom: 0;
 }
 
-.accordion__item > p {
+.accordion__note {
     margin-top: 16px;
     margin-bottom: 8px;
     color: #495057;
@@ -37,4 +37,4 @@
 
 .accordion__item[open] > .accordion__summary {
     color: #212429;
- }
+}
