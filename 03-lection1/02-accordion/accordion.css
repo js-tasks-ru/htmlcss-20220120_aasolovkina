@@ -9,8 +9,8 @@
 
 .accordion__item {
     margin-bottom: 8px;
-    background: #FFFFFF;
-    border: 1px solid #ACB5BD;
+    background: var(--white);
+    border: 1px solid var(--grey-3);
     box-sizing: border-box;
     border-radius: 8px;
     padding: 24px 32px;
@@ -23,12 +23,12 @@
 .accordion__note {
     margin-top: 16px;
     margin-bottom: 8px;
-    color: #495057;
+    color: var(--grey-4);
 }
 
 .accordion__summary {
     list-style: none;
-    color: #000;
+    color: var(-black);
 }
 
 .accordion__summary::-webkit-details-marker {
@@ -36,5 +36,5 @@
 }
 
 .accordion__item[open] > .accordion__summary {
-    color: #212429;
+    color: var(-black);
 }
