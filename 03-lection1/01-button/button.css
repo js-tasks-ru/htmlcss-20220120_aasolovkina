@@ -1,5 +1,5 @@
 /* Стилизация кнопки */
-button {
+.button {
     cursor: pointer;
     width: 182px;
     height: 48px;
