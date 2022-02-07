@@ -1,5 +1,4 @@
 .histogram {
-    height: 185px;
     background: var(--white);
     border: 1px solid var(--grey-3);
     box-sizing: border-box;
@@ -9,7 +8,6 @@
 }
 
 .histogram__caption {
-    position: absolute;
     left: 24px;
     right: 130px;
     top: 16px;
@@ -23,7 +21,6 @@
 }
 
 .histogram__view_all {
-    position: absolute;
     right: 24px;
     top: 19px;
     font-family: Inter;
@@ -49,7 +46,7 @@
 
 .histogram__lines {
     width: 100%;
-    height: 100%;
+    height: 50px;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
