@@ -3,14 +3,11 @@
     border: 1px solid var(--grey-3);
     box-sizing: border-box;
     border-radius: 8px;
-    padding: 111px 29px 24px 26px;
+    padding: 24px 29px 24px 26px;
     position: relative;
 }
 
 .histogram__caption {
-    left: 24px;
-    right: 130px;
-    top: 16px;
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
@@ -33,7 +30,6 @@
 }
 
 .histogram__value {
-    position: absolute;
     left: 24px;
     top: 46px;
     font-family: Inter;
