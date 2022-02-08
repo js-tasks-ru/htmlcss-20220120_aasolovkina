@@ -35,7 +35,3 @@
 .tooltip__icon:hover ~ .tooltip__bubble {
     display: block;
 }
-
-body {
-    text-align: center;
-}
