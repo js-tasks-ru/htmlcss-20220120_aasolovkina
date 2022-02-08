@@ -1,0 +1,19 @@
+.template-page {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-row-gap: 36px;
+    background-color: #F9FAFC;
+}
+
+.template-page__main {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 56px;
+    padding: 0 165px;    
+}
+
+.template-page__content {
+    background: var(--white);
+    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: 12px;
+}
