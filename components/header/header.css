@@ -12,3 +12,12 @@
     color: var(--black);
     margin: 0;
 }
+
+.header_transparent {
+    background-color: transparent;
+}
+
+.header_no_title {
+    padding: 0;
+    height: 82px;
+}
