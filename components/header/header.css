@@ -21,3 +21,22 @@
     padding: 0;
     height: 82px;
 }
+
+@media only screen and (max-width: 768px) {
+    .header {
+        padding: 96px 16px 69px;
+    }
+
+    .header__title {
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 38px;
+        color: var(--grey-4);
+    }
+
+    .header_no_title {
+        padding: 0;
+        height: 64px;
+        background-color: #F9FAFC;
+    }
+}
