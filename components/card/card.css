@@ -28,3 +28,27 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+@media only screen and (max-width: 768px) {
+    .card {
+        padding: 0; 
+        display: grid;  
+        grid-template-rows: 1fr auto;
+    }
+
+    .card__top {
+        padding: 10px;
+    }
+
+    .card__body {
+        padding: 12px 10px 10px;
+        border-top: var(--grey-2) solid 1px;
+    }
+
+    .card__title {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0;
+    }
+}
