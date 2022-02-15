@@ -3,10 +3,6 @@
    position: relative;
 }
 
-.tooltip__icon {
-    cursor: pointer;
-}
-
 .tooltip__bubble {
     display: inline-flex;
     background: #4263EB;
@@ -32,6 +28,14 @@
     transform: translateX(-50%);
 }
 
-.tooltip__icon:hover ~ .tooltip__bubble {
+.icon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+.icon:hover ~ .tooltip__bubble {
     display: block;
 }
