@@ -28,7 +28,7 @@
     transform: translateX(-50%);
 }
 
-.icon {
+.tooltip__icon {
     width: 24px;
     height: 24px;
     display: inline-block;
@@ -36,6 +36,6 @@
     cursor: pointer;
   }
 
-.icon:hover ~ .tooltip__bubble {
+.tooltip__icon:hover ~ .tooltip__bubble {
     display: block;
 }
