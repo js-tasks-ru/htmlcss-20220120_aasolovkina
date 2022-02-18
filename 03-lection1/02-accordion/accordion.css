@@ -42,13 +42,13 @@
     color: var(-black);
 }
 
-.icon {
+.accordion__icon {
     width: 24px;
     height: 24px;
     display: inline-block;
     overflow: hidden;
 }
 
-.accordion__item[open] .accordion__icon > svg {
+.accordion__item[open] .accordion__icon {
     transform: rotate(180deg);
 }
