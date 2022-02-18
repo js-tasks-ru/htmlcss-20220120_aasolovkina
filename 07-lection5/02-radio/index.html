@@ -4,8 +4,56 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./radio.css">
+        <style>
+            #radio-container {
+                display: grid;
+                gap: 16px;
+                grid-template-columns: auto;
+                grid-template-rows: repeat(3 auto);
+            }
+        </style>
     </head>
     <body>
-
+        <div id="radio-container">
+            <label clas="radio">
+                <input type="radio" class="radio__input" name="name">
+                <div class="radio__state">
+                    <div class="radio__control">
+                        <svg class="radio__icon">
+                            <use href="../../assets/icons/sprite.svg#circle"></use>
+                        </svg>
+                    </div>
+                    <div class="radio__title">
+                        Default
+                    </div>
+                </div>
+            </label>
+            <label clas="radio">
+                <input type="radio" class="radio__input" name="name" checked>
+                <div class="radio__state">
+                    <div class="radio__control">
+                        <svg class="radio__icon">
+                            <use href="../../assets/icons/sprite.svg#circle"></use>
+                        </svg>
+                    </div>
+                    <div class="radio__title">
+                        Checked
+                    </div>
+                </div>
+            </label>
+            <label clas="radio">
+                <input type="radio" class="radio__input" name="name" disabled>
+                <div class="radio__state">
+                    <div class="radio__control">
+                        <svg class="radio__icon">
+                            <use href="../../assets/icons/sprite.svg#circle"></use>
+                        </svg>
+                    </div>
+                    <div class="radio__title">
+                        Disabled
+                    </div>
+                </div>
+            </label>
+        </div>
     </body>
 </html>
