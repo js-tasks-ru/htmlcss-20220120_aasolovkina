@@ -1,0 +1,59 @@
+#all-tab:not(:checked) ~ .tabs__content.tabs__content_all,
+#complex-tab:not(:checked) ~ .tabs__content.tabs__content_complex,
+#simple-tab:not(:checked) ~ .tabs__content.tabs__content_simple {
+    display: none;
+}
+
+.tabs {
+    padding-top: 40px; 
+    background: var(--white);   
+}
+
+.tabs__scroller > .header {
+    padding-top: 0;
+}
+
+.tabs__scroller > .header > .container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.tabs__label {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-3);
+    margin-left: 40px;
+    padding-bottom: 8px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.tabs__label:first-child {
+    margin-left: 0;
+}
+
+#all-tab:checked ~ .tabs__scroller .tabs__label[for="all-tab"],
+#complex-tab:checked ~ .tabs__scroller .tabs__label[for="complex-tab"],
+#simple-tab:checked ~ .tabs__scroller .tabs__label[for="simple-tab"] {
+    border-bottom: solid 5px var(--black);
+    color: var(--black);
+}
+
+#all-tab, #complex-tab, #simple-tab {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .tabs {
+        padding-top: 32px;    
+    }
+}

@@ -6,10 +6,6 @@
         <link rel="stylesheet" href="./assets/css/main.css">
     </head>
     <body  class="page">
-        <input type="radio" id="all-tab" name="tabs-radio" checked>
-        <input type="radio" id="complex-tab" name="tabs-radio">
-        <input type="radio" id="simple-tab" name="tabs-radio">
-
         <header class="header">
             <div class="container">
                 <div class="logo">
@@ -20,120 +16,130 @@
                 <h1 class="header__title">
                     Reusable component library
                 </h1>
-                <div class="tabs">
-                    <div class="tabs__scroller">
-                        <label for="all-tab">All components</label>
-                        <label for="complex-tab">Complex</label>
-                        <label for="simple-tab">Simple</label>
-                    </div>
-                </div>
             </div>            
         </header>
-        <main>
-            <div class="tabs__content tabs__content_all preview">
-                <div class="card">
-                    <div class="card__top">
-
-                    </div>
-                    <div class="card__body">
-                        <h5 class="card__title">Tooltip</h5>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__top">
-
-                    </div>
-                    <div class="card__body">
-                        <h5 class="card__title">Custom form elements</h5>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__top">
-
-                    </div>
-                    <div class="card__body">
-                        <h5 class="card__title">Calendar</h5>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__top">
-
-                    </div>
-                    <div class="card__body">
-                        <h5 class="card__title">Modal dialog</h5>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__top">
-
-                    </div>
-                    <div class="card__body">
-                        <h5 class="card__title">Histogram</h5>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__top">
-
-                    </div>
-                    <div class="card__body">
-                        <h5 class="card__title">Avatar</h5>
-                    </div>
-                </div>
+        <div class="tabs">
+            <input type="radio" id="all-tab" name="tabs-radio" checked>
+            <input type="radio" id="complex-tab" name="tabs-radio">
+            <input type="radio" id="simple-tab" name="tabs-radio">
+            <div class="tabs__scroller">
+                <header class="header">
+                    <div class="container">
+                        <label class="tabs__label" for="all-tab">All components</label>
+                        <label class="tabs__label" for="complex-tab">Complex</label>
+                        <label class="tabs__label" for="simple-tab">Simple</label>
+                    </div>            
+                </header>
             </div>
-            <div class="tabs__content tabs__content_complex preview">
-                <div class="card">
-                    <div class="card__top">
-
+            <main class="tabs__content tabs__content_all">
+                <div class="preview">
+                    <div class="card">
+                        <div class="card__top">
+    
+                        </div>
+                        <div class="card__body">
+                            <h5 class="card__title">Tooltip</h5>
+                        </div>
                     </div>
-                    <div class="card__body">
-                        <h5 class="card__title">Custom form elements</h5>
+                    <div class="card">
+                        <div class="card__top">
+    
+                        </div>
+                        <div class="card__body">
+                            <h5 class="card__title">Custom form elements</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__top">
+    
+                        </div>
+                        <div class="card__body">
+                            <h5 class="card__title">Calendar</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__top">
+    
+                        </div>
+                        <div class="card__body">
+                            <h5 class="card__title">Modal dialog</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__top">
+    
+                        </div>
+                        <div class="card__body">
+                            <h5 class="card__title">Histogram</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__top">
+    
+                        </div>
+                        <div class="card__body">
+                            <h5 class="card__title">Avatar</h5>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card__top">
-
+            </main>
+            <main class="tabs__content tabs__content_complex">
+                <div class="preview">
+                    <div class="card">
+                        <div class="card__top">
+    
+                        </div>
+                        <div class="card__body">
+                            <h5 class="card__title">Custom form elements</h5>
+                        </div>
                     </div>
-                    <div class="card__body">
-                        <h5 class="card__title">Calendar</h5>
+                    <div class="card">
+                        <div class="card__top">
+    
+                        </div>
+                        <div class="card__body">
+                            <h5 class="card__title">Calendar</h5>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card__top">
-
+                    <div class="card">
+                        <div class="card__top">
+    
+                        </div>
+                        <div class="card__body">
+                            <h5 class="card__title">Modal dialog</h5>
+                        </div>
                     </div>
-                    <div class="card__body">
-                        <h5 class="card__title">Modal dialog</h5>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__top">
-
-                    </div>
-                    <div class="card__body">
-                        <h5 class="card__title">Histogram</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="tabs__content tabs__content_simple preview">
-                <div class="card">
-                    <div class="card__top">
-
-                    </div>
-                    <div class="card__body">
-                        <h5 class="card__title">Tooltip</h5>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__top">
-
-                    </div>
-                    <div class="card__body">
-                        <h5 class="card__title">Avatar</h5>
+                    <div class="card">
+                        <div class="card__top">
+    
+                        </div>
+                        <div class="card__body">
+                            <h5 class="card__title">Histogram</h5>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-        </main>
+            </main>                
+            <main class="tabs__content tabs__content_simple">
+                <div class="preview">
+                    <div class="card">
+                        <div class="card__top">
+    
+                        </div>
+                        <div class="card__body">
+                            <h5 class="card__title">Tooltip</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__top">
+    
+                        </div>
+                        <div class="card__body">
+                            <h5 class="card__title">Avatar</h5>
+                        </div>
+                    </div>
+                </div>
+            </main> 
+        </div>
         <footer class="footer">
             <div class="container">
                 <h2 class="footer__title">
