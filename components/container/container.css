@@ -1,6 +1,10 @@
 .container {
     max-width: 1110px;
     margin: 0 auto;
+<<<<<<< HEAD
     padding-left: 16px;
     padding-right: 16px;
+=======
+    padding: 0 16px;
+>>>>>>> f3913634986050fb0d6ff93cd4a36474f22fb836
 }

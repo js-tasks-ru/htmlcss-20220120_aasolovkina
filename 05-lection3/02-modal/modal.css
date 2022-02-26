@@ -21,13 +21,6 @@
     box-sizing: border-box;
 }
 
-.modal__close {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    cursor: pointer;
-}
-
 .modal__window-title {
     font-family: Inter;
     font-style: normal;
@@ -47,6 +40,7 @@
     font-size: 16px;
     line-height: 24px;
     color: var(--grey-4);
+<<<<<<< HEAD
     overflow: hidden;
 }
 
@@ -68,4 +62,24 @@
     width: 100%;
     height: auto;
     border: solid 1px rgba(196, 196, 196, 0.5);
+=======
+}
+
+.modal__close {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.modal__icon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    overflow: hidden;
+>>>>>>> f3913634986050fb0d6ff93cd4a36474f22fb836
 }

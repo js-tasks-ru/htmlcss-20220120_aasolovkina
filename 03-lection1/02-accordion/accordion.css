@@ -29,6 +29,9 @@
 .accordion__summary {
     list-style: none;
     color: var(-black);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto;
 }
 
 .accordion__summary::-webkit-details-marker {
@@ -37,4 +40,15 @@
 
 .accordion__item[open] > .accordion__summary {
     color: var(-black);
+}
+
+.accordion__icon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.accordion__item[open] .accordion__icon {
+    transform: rotate(180deg);
 }

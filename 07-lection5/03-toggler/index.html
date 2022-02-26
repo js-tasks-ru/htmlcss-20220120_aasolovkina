@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- Страница с кнопкой переключения -->
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="../../assets/css/main.css">
+        <link rel="stylesheet" href="./toggler.css">
+        <style>
+            .page__content {
+                display: grid;
+                gap: 16px;
+                grid-template-columns: auto;
+                grid-template-rows: repeat(3 auto);
+                padding: 16px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="page__content">
+            <label class="toggle">
+                <input class="toggle__checkbox" type="checkbox" name="name"/>
+                <div class="toggle__conteiner">
+                  <div class="toggle__slider"></div>
+                </div> 
+                <div class="toggle__label">
+                  <span class="toggle__label-off">Off</span>
+                  <span class="toggle__label-on">On</span>
+                  <span class="toggle__label-disabled">Disabled</span>
+                </div>
+              </label>
+              <label class="toggle">
+                <input class="toggle__checkbox" type="checkbox" name="name" checked/>
+                <div class="toggle__conteiner">
+                  <div class="toggle__slider"></div>
+                </div> 
+                <div class="toggle__label">
+                  <span class="toggle__label-off">Off</span>
+                  <span class="toggle__label-on">On</span>
+                  <span class="toggle__label-disabled">Disabled</span>
+                </div>
+              </label>
+              <label class="toggle">
+                <input class="toggle__checkbox" type="checkbox" name="name" disabled/>
+                <div class="toggle__conteiner">
+                  <div class="toggle__slider"></div>
+                </div> 
+                <div class="toggle__label">
+                  <span class="toggle__label-off">Off</span>
+                  <span class="toggle__label-on">On</span>
+                  <span class="toggle__label-disabled">Disabled</span>
+                </div>
+              </label> 
+        </div>
+    </body>
+</html>
