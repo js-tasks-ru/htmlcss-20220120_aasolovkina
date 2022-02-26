@@ -12,6 +12,12 @@
     line-height: 19px;
 }
 
+.button_small {
+    width: auto;
+    height: auto;
+    padding: 8px 14px;
+}
+
 .button_primary {
     background-color: #4263EB;
     color: var(--white);

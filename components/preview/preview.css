@@ -1,12 +1,18 @@
 .preview {
-    display: flex;
-    padding: 67px 0 92px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 67px 16px 92px;
     gap: 30px;
     flex-wrap: wrap;
+    max-width: 1110px;
+    margin: 0 auto;
 }
 
 @media only screen and (max-width: 768px) {
     .preview {
         padding: 22px 16px;
+        display: flex;
     }
+
 }

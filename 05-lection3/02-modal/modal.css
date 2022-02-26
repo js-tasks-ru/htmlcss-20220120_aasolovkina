@@ -47,4 +47,25 @@
     font-size: 16px;
     line-height: 24px;
     color: var(--grey-4);
+    overflow: hidden;
+}
+
+.modal__window_type_preview {
+    display: block;
+    position: relative;
+    background: transparent;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+}
+
+.modal__window_type_preview .modal__window {
+    transform: none;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+    border: solid 1px rgba(196, 196, 196, 0.5);
 }
