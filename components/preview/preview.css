@@ -1,11 +1,7 @@
 .preview {
-<<<<<<< HEAD
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-=======
-    display: flex;
->>>>>>> f3913634986050fb0d6ff93cd4a36474f22fb836
     padding: 67px 16px 92px;
     gap: 30px;
     flex-wrap: wrap;
@@ -18,5 +14,4 @@
         padding: 22px 16px;
         display: flex;
     }
-
 }

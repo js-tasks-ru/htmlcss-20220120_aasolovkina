@@ -35,16 +35,12 @@
 
 @media only screen and (max-width: 768px) {
     .header {
-<<<<<<< HEAD
-        padding: 96px 0 69px;
-=======
         padding: 16px 16px 0;
     }
 
     .logo {
         display: flex;
         justify-content:center;
->>>>>>> f3913634986050fb0d6ff93cd4a36474f22fb836
     }
 
     .header__title {
