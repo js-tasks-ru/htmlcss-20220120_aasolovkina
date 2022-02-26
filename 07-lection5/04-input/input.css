@@ -1,0 +1,66 @@
+.input__label{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--grey-3);
+}
+
+.input__control {
+    position: relative;
+}
+
+.input__input {
+    background: var(--white);
+    border: 1px solid var(--grey-2);
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 56px;
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    outline: none;
+}
+
+.input.input_success .input__input,
+.input.input_invalid .input__input {
+    padding-right: 50px;
+}
+
+.input__input:focus {
+    border: 1px solid #4263EB;
+    box-shadow: 0px 1px 1px rgba(51, 154, 240, 0.1);
+}
+
+.input.input_invalid .input__input {
+    border: 1px solid var(--red);
+    box-shadow: 0px 1px 1px rgba(240, 61, 62, 0.1);
+}
+
+::placeholder {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--grey-2);
+}
+
+.input__icon-success,
+.input__icon-error {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 28px;
+    height: 28px;
+}
+
+.input.input_success .input__icon-error,
+.input.input_invalid .input__icon-success,
+.input:not(.input_success):not(.input_invalid) .input__icon-error,
+.input:not(.input_success):not(.input_invalid) .input__icon-success {
+    display: none;
+}
