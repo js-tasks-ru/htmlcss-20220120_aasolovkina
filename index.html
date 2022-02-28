@@ -4,10 +4,33 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="./assets/css/main.css">
+        <script defer src="./09-lection7/01-burger-menu/burger-menu.js"></script>
+        <style>
+            #burger-menu-open {
+                border: none;
+                background-color: transparent;
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                padding: 0;
+                top:20px;
+            }
+
+            @media only screen and (min-width: 769px) {
+                #burger-menu-open {
+                    display: none;
+                }
+            }
+        </style>
     </head>
     <body  class="page">
         <header class="header">
             <div class="container">
+                <button id="burger-menu-open">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <use href="./assets/icons/sprite.svg#burger"></use>
+                    </svg>
+                </button>
                 <div class="logo">
                     <svg class="logo__icon">
                         <use href="./assets/icons/sprite.svg#logo"></use>
@@ -150,5 +173,37 @@
                 </p>
             </div>
         </footer>
+        <div class="burger-menu" id="burger-menu">
+            <header class="burger-menu__header">
+                <div class="container">
+                    <button id="burger-menu-close" class="burger-menu__close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <use href="../../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                    </button> 
+                    <div class="logo">
+                        <svg class="logo__icon">
+                            <use href="../../assets/icons/sprite.svg#logo"></use>
+                        </svg>
+                    </div>
+                </div>            
+            </header>
+            <main class="burger-menu__main">  
+                <div class="container">   
+                    <div class="burger-menu__title">Components</div>
+                    <div class="burger-menu__body">
+                        <div class="burger-menu__item">Modal</div>
+                        <div class="burger-menu__item burger-menu__item_selected">Tooltip</div>
+                        <div class="burger-menu__item">Avatar</div>
+                        <div class="burger-menu__item">Calendar</div>
+                        <div class="burger-menu__item">Histogram</div>
+                        <div class="burger-menu__item">Custom form elements</div>  
+                    </div>
+                    <div class="burger-menu__footer">
+                        <div class="burger-menu__item">Main page</div>
+                    </div>
+                </div> 
+            </main>          
+        </div>
     </body>
 </html>
