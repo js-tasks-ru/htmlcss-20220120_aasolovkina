@@ -51,3 +51,8 @@
 .button_alternate:not(:disabled):hover {
     background: #E5E5E5;
 }
+
+.button:active {
+    transform: translateY(5px);
+    transition: transform 200ms linear;
+}
