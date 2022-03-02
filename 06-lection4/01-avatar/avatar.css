@@ -10,3 +10,8 @@
     height: 100%;
     object-fit: cover;
 }
+
+.avatar__component-preview {
+    height: 200px;
+    width: 200px;
+}

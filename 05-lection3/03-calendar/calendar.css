@@ -60,3 +60,25 @@
     opacity: 0.2;
     padding: 8px 9px;
 }
+
+.calendar_size_mini {
+    padding: 7%;
+    max-width: 170px;
+    width: 170px;
+    min-width: 75px;
+}
+
+.calendar_size_mini .calendar__title {
+    font-size: 14px;
+    line-height: 1.15;
+}
+
+.calendar_size_mini .calendar__item,
+.calendar_size_mini .calendar__item_day {
+    font-size: 9px;
+    line-height: 1.15;
+}
+
+.calendar_size_mini .calendar__item_between-active {
+    padding: 0;
+}
