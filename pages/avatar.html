@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../06-lection4/01-avatar/avatar.css">
+    <style>
+        .template-page__content {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+
+        .template-page__content-header {
+            font-size: 28px;
+            color: var(--black);
+            font-weight: 400;
+            line-height: 1.36;
+            margin: 0;
+        }
+
+        .mt-md {
+            margin-top: 1rem;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            height: 200px;
+        }
+
+        .mb-md {
+            margin-bottom: 1rem !important;
+        }
+
+        .tabs__content {
+            padding-top: 48px;
+            padding-bottom: 48px;
+        }
+    </style>
+</head>
+<body class="template-page">
+    <header class="header header_transparent header_no_title">
+        <div class="container">
+            <div class="logo">
+                <svg class="logo__icon">
+                    <use href="../assets/icons/sprite.svg#logo"></use>
+                </svg>
+            </div>
+        </div>
+    </header>
+    <main class="template-page__main">
+        <div class="menu">
+            <div class="menu__title">Components</div>
+            <nav class="menu__body">
+                <a href="modal.html">Modal</a>
+                <a href="tooltip.html">Tooltip</a>
+                <a href="avatar.html">Avatar</a>
+                <a href="calendar.html">Calendar</a>
+                <a href="histogram.html">Histogram</a>
+                <a href="custom%20form%20elements.html">Custom form elements</a>
+            </nav>
+        </div>
+        <div class="template-page__content">
+            <div class="container-48">
+                <div class="template-page__content-header mb-md">
+                    Avatar
+                </div>
+                <div class="avatar container mt-md">
+                    <img src="../06-lection4/01-avatar/public/avatar-200.jpg" class="avatar__img" alt="img"> 
+                </div>
+            </div>
+
+            <div>
+                <div class="tabs tabs_underlined tabs_smaller-padding-top">
+                    <input type="radio" id="html-tab" name="tabs-radio" checked>
+                    <input type="radio" id="css-tab" name="tabs-radio">
+                    <div class="tabs__scroller">
+                        <div class="header">
+                            <div class="container container-48">
+                                <label class="tabs__label" for="html-tab">HTML</label>
+                                <label class="tabs__label" for="css-tab">CSS</label>
+                            </div>            
+                        </div>
+                    </div>
+                    <div class="tabs__content tabs__html container-48">
+                        <figure>
+                            <pre>
+                                <code>
+&lt;div class=&quot;avatar&quot;&gt;
+&lt;img src=&quot;./public/avatar-200.jpg&quot; class=&quot;avatar__img&quot; alt=&quot;img&quot;&gt; 
+&lt;/div&gt;
+                                </code>
+                            </pre>
+                        </figure>
+                    </div>
+                    <div class="tabs__content tabs__css container-48">
+                        <figure>
+                            <pre>
+                                <code>
+.avatar {
+height: 102px;
+width: 102px;
+border-radius: 50%;
+overflow: hidden;
+}
+
+.avatar__img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.avatar__component-preview {
+height: 200px;
+width: 200px;
+}
+                                </code>
+                            </pre>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer footer_small footer_transparent">
+        <h5 class="footer__title footer__title_small">Reusable component library</h5>
+    </footer>
+    
+</body>
+</html>

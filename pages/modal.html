@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../05-lection3/02-modal/modal.css">
+    <link rel="stylesheet" href="../03-lection1/01-button/button.css">
+    <style>
+        .template-page__content {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+
+        .template-page__content-header {
+            font-size: 28px;
+            color: var(--black);
+            font-weight: 400;
+            line-height: 1.36;
+            margin: 0;
+        }
+
+        .mt-md {
+            margin-top: 1rem;
+        }
+
+        .mb-md {
+            margin-bottom: 1rem !important;
+        }
+
+        .tabs__content {
+            padding-top: 48px;
+            padding-bottom: 48px;
+        }
+
+        .button.button_primary {
+            width: auto;
+        }
+    </style>
+</head>
+<body class="template-page">
+    <header class="header header_transparent header_no_title">
+        <div class="container">
+            <div class="logo">
+                <svg class="logo__icon">
+                    <use href="../assets/icons/sprite.svg#logo"></use>
+                </svg>
+            </div>
+        </div>
+    </header>
+    <main class="template-page__main">
+        <div class="menu">
+            <div class="menu__title">Components</div>
+            <nav class="menu__body">
+                <a href="modal.html">Modal</a>
+                <a href="tooltip.html">Tooltip</a>
+                <a href="avatar.html">Avatar</a>
+                <a href="calendar.html">Calendar</a>
+                <a href="histogram.html">Histogram</a>
+                <a href="custom%20form%20elements.html">Custom form elements</a>
+            </nav>
+        </div>
+        <div class="template-page__content">
+            <div class="container-48">
+                <div class="template-page__content-header mb-md">
+                    Modal
+                </div>
+                
+                <div class="container mt-md">
+                    <button id="modal-open" class="button button_primary">Basic CSS-Only Modal</button>
+                    <div id="modal" class="modal">
+                        <div class="modal__window">
+                            <div id="modal-close" class="modal__close">
+                                <svg class="modal__icon">
+                                    <use href="../assets/icons/sprite.svg#close"></use>
+                                </svg>
+                            </div>
+                            <div class="modal__window-title">Modal title</div>
+                            <div class="modal__window-content">
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="tabs tabs_underlined tabs_smaller-padding-top">
+                    <input type="radio" id="html-tab" name="tabs-radio" checked>
+                    <input type="radio" id="css-tab" name="tabs-radio">
+                    <div class="tabs__scroller">
+                        <div class="header">
+                            <div class="container container-48">
+                                <label class="tabs__label" for="html-tab">HTML</label>
+                                <label class="tabs__label" for="css-tab">CSS</label>
+                            </div>            
+                        </div>
+                    </div>
+                    <div class="tabs__content tabs__html container-48">
+                        <figure>
+                            <pre>
+                                <code>
+&lt;div id=&quot;modal&quot; class=&quot;modal&quot;&gt;
+    &lt;div class=&quot;modal__window&quot;&gt;
+        &lt;div id=&quot;modal-close&quot; class=&quot;modal__close&quot;&gt;
+            &lt;svg class=&quot;modal__icon&quot;&gt;
+                &lt;use href=&quot;../../assets/icons/sprite.svg#close&quot;&gt;&lt;/use&gt;
+            &lt;/svg&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;modal__window-title&quot;&gt;Modal title&lt;/div&gt;
+        &lt;div class=&quot;modal__window-content&quot;&gt;
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                </code>
+                            </pre>
+                        </figure>
+                    </div>
+                    <div class="tabs__content tabs__css container-48">
+                        <figure>
+                            <pre>
+                                <code>
+.modal {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(196, 196, 196, 0.5);
+    z-index: 999;
+}
+
+.modal__window {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    width: 428px;
+    height: 294px;
+    background: var(--white);
+    border-radius: 8px;
+    padding: 30px 40px 33px 40px;
+    box-sizing: border-box;
+}
+
+.modal__close {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.modal__icon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.modal__window-title {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: flex-end;
+    color: #334D6E;
+}
+
+.modal__window-content {
+    margin-top: 14px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-4);
+    overflow: hidden;
+}
+
+.modal__window_type_preview {
+    display: block;
+    position: relative;
+    background: transparent;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+}
+
+.modal__window_type_preview .modal__window {
+    transform: none;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+    border: solid 1px rgba(196, 196, 196, 0.5);
+}
+                                </code>
+                            </pre>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer footer_small footer_transparent">
+        <h5 class="footer__title footer__title_small">Reusable component library</h5>
+    </footer>
+</body>
+<script src="../05-lection3/02-modal/index.js"></script>   
+</html>

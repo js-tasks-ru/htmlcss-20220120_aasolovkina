@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histogram</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../04-lection2/01-histogram/histogram.css">
+    <style>
+        .template-page__content {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+
+        .template-page__content-header {
+            font-size: 28px;
+            color: var(--black);
+            font-weight: 400;
+            line-height: 1.36;
+            margin: 0;
+        }
+
+        .mt-md {
+            margin-top: 1rem;
+        }
+
+        .mb-md {
+            margin-bottom: 1rem !important;
+        }
+
+        .tabs__content {
+            padding-top: 48px;
+            padding-bottom: 48px;
+        }
+    </style>
+</head>
+<body class="template-page">
+    <header class="header header_transparent header_no_title">
+        <div class="container">
+            <div class="logo">
+                <svg class="logo__icon">
+                    <use href="../assets/icons/sprite.svg#logo"></use>
+                </svg>
+            </div>
+        </div>
+    </header>
+    <main class="template-page__main">
+        <div class="menu">
+            <div class="menu__title">Components</div>
+            <nav class="menu__body">
+                <a href="modal.html">Modal</a>
+                <a href="tooltip.html">Tooltip</a>
+                <a href="avatar.html">Avatar</a>
+                <a href="calendar.html">Calendar</a>
+                <a href="histogram.html">Histogram</a>
+                <a href="custom%20form%20elements.html">Custom form elements</a>
+            </nav>
+        </div>
+        <div class="template-page__content">
+            <div class="container-48">
+                <div class="template-page__content-header mb-md">
+                    Histogram
+                </div>
+           
+                <div class="histogram container mt-md">
+                    <div class="histogram__caption">
+                        Total orders
+                    </div>
+                    <div class="histogram__value">
+                        50254                
+                    </div>
+                    <div class="histogram__view_all">
+                        View all
+                    </div>
+                    <div class="histogram__lines">
+                        <div class="histogram__line"></div>
+                        <div class="histogram__line"></div>
+                        <div class="histogram__line"></div>
+                        <div class="histogram__line"></div>
+                        <div class="histogram__line"></div>
+                        <div class="histogram__line"></div>
+                        <div class="histogram__line"></div>
+                        <div class="histogram__line"></div>
+                        <div class="histogram__line"></div>
+                        <div class="histogram__line"></div>
+                        <div class="histogram__line"></div>
+                        <div class="histogram__line"></div>
+                        <div class="histogram__line"></div>
+                        <div class="histogram__line"></div>
+                        <div class="histogram__line"></div>
+                        <div class="histogram__line"></div>
+                        <div class="histogram__line"></div>
+                        <div class="histogram__line"></div>
+                        <div class="histogram__line"></div>
+                        <div class="histogram__line"></div>
+                        <div class="histogram__line"></div>
+                        <div class="histogram__line"></div>
+                        <div class="histogram__line"></div>
+                        <div class="histogram__line"></div>
+                        <div class="histogram__line"></div>
+                        <div class="histogram__line"></div>
+                        <div class="histogram__line"></div>
+                        <div class="histogram__line"></div>
+                        <div class="histogram__line"></div>
+                        <div class="histogram__line"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="tabs tabs_underlined tabs_smaller-padding-top">
+                    <input type="radio" id="html-tab" name="tabs-radio" checked>
+                    <input type="radio" id="css-tab" name="tabs-radio">
+                    <div class="tabs__scroller">
+                        <div class="header">
+                            <div class="container container-48">
+                                <label class="tabs__label" for="html-tab">HTML</label>
+                                <label class="tabs__label" for="css-tab">CSS</label>
+                            </div>            
+                        </div>
+                    </div>
+                    <div class="tabs__content tabs__html container-48">
+                        <figure>
+                            <pre>
+                                <code>
+&lt;div class=&quot;histogram&quot;&gt;
+&lt;div class=&quot;histogram__caption&quot;&gt;
+    Total orders
+&lt;/div&gt;
+&lt;div class=&quot;histogram__value&quot;&gt;
+    50254                
+&lt;/div&gt;
+&lt;div class=&quot;histogram__view_all&quot;&gt;
+    View all
+&lt;/div&gt;
+&lt;div class=&quot;histogram__lines&quot;&gt;
+    &lt;div class=&quot;histogram__line&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__line&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__line&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__line&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__line&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__line&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__line&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__line&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__line&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__line&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__line&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__line&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__line&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__line&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__line&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__line&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__line&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__line&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__line&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__line&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__line&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__line&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__line&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__line&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__line&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__line&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__line&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__line&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__line&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__line&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+                                </code>
+                            </pre>
+                        </figure>
+                    </div>
+                    <div class="tabs__content tabs__css container-48">
+                        <figure>
+                            <pre>
+                                <code>
+.histogram {
+    background: var(--white);
+    border: 1px solid var(--grey-3);
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 24px 29px 24px 26px;
+    position: relative;
+}
+
+.histogram__caption {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black);
+    opacity: 0.8;
+}
+
+.histogram__view_all {
+    right: 24px;
+    top: 19px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    color: #4263EB;
+}
+
+.histogram__value {
+    left: 24px;
+    top: 46px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--black);
+}
+
+.histogram__lines {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.histogram__line {
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 0;
+    background: #4263EB;
+    margin-left: 1px;
+
+}
+
+.histogram__line:first-child {
+    margin-left: 0;
+}
+
+.histogram__line:nth-child(1) {
+    height: 100%;
+}
+
+.histogram__line:nth-child(2) {
+    height: 80%;
+}
+
+.histogram__line:nth-child(3) {
+    height: 50%;
+}
+
+.histogram__line:nth-child(4) {
+    height: 90%;
+}
+
+.histogram__line:nth-child(5) {
+    height: 50%;
+}
+
+.histogram__line:nth-child(6) {
+    height: 60%;
+}
+
+.histogram__line:nth-child(7) {
+    height: 70%;
+}
+
+.histogram__line:nth-child(8) {
+    height: 100%;
+}
+
+.histogram__line:nth-child(9) {
+    height: 20%;
+}
+
+.histogram__line:nth-child(10) {
+    height: 40%;
+}
+
+.histogram__line:nth-child(11) {
+    height: 50%;
+}
+
+.histogram__line:nth-child(12) {
+    height: 60%;
+}
+
+.histogram__line:nth-child(13) {
+    height: 20%;
+}
+
+.histogram__line:nth-child(14) {
+    height: 100%;
+}
+
+.histogram__line:nth-child(15) {
+    height: 30%;
+}
+
+.histogram__line:nth-child(16) {
+    height: 80%;
+}
+
+.histogram__line:nth-child(17) {
+    height: 70%;
+}
+
+.histogram__line:nth-child(18) {
+    height: 60%;
+}
+
+.histogram__line:nth-child(19) {
+    height: 50%;
+}
+
+.histogram__line:nth-child(20) {
+    height: 80%;
+}
+
+.histogram__line:nth-child(21) {
+    height: 70%;
+}
+
+.histogram__line:nth-child(22) {
+    height: 20%;
+}
+
+.histogram__line:nth-child(23) {
+    height: 90%;
+}
+
+.histogram__line:nth-child(24) {
+    height: 60%;
+}
+
+.histogram__line:nth-child(25) {
+    height: 30%;
+}
+
+.histogram__line:nth-child(26) {
+    height: 80%;
+}
+
+.histogram__line:nth-child(27) {
+    height: 70%;
+}
+
+.histogram__line:nth-child(28) {
+    height: 40%;
+}
+
+.histogram__line:nth-child(29) {
+    height: 50%;
+}
+
+.histogram__line:nth-child(30) {
+    height: 90%;
+}
+                                </code>
+                            </pre>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer footer_small footer_transparent">
+        <h5 class="footer__title footer__title_small">Reusable component library</h5>
+    </footer>
+    
+</body>
+</html>
