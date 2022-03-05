@@ -2,76 +2,79 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
-  .toggle__conteiner {
-    position: relative;
-    width: 52px;
-    height: 28px;
-    background: var(--white);
-    border: 1px solid var(--grey-2);
-    box-sizing: border-box;
-    border-radius: 16px;
-    padding: 1px;
-  }
-  
-  .toggle__checkbox {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width:0;
-    height:0;
-    opacity: 0;
-  }
-  
-  .toggle__slider {
-    position: absolute;
-    left: 1px;
-    width: 24px;
-    height: 24px;
-    background: var(--grey-2);
-    border-radius: 16px;
-  }
-  
-  .toggle__label {
-    margin-left: 14px;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--grey-4);
-  }
-  
-  .toggle__checkbox:not(:checked) ~ .toggle__label > .toggle__label-on,
-  .toggle__checkbox:disabled ~ .toggle__label > .toggle__label-on,
-  .toggle__checkbox:checked ~ .toggle__label > .toggle__label-off,
-  .toggle__checkbox:disabled ~ .toggle__label > .toggle__label-off,
-  .toggle__checkbox:not(:disabled) ~ .toggle__label > .toggle__label-disabled {
-    display: none;
-  }
-  
-  
-  .toggle__checkbox:checked ~ .toggle__conteiner {
-    background: #4263EB;
-    border: 1px solid #4263EB;
-  }
-  
-  .toggle__checkbox:checked ~ .toggle__conteiner > .toggle__slider {
-    background: var(--white);
-    right: 1px;
-    left: auto;
-  }
-  
-  .toggle__checkbox:focus ~ .toggle__label {
-    text-decoration: underline;
-  }
-  
-  
-  .toggle__checkbox:disabled ~ .toggle__conteiner {
-    background: var(--grey-2);
-  }
-  
-  .toggle__checkbox:disabled ~ .toggle__conteiner > .toggle__slider {
-    background: var(--grey-3);
-    opacity: 0.25;
-  }
+}
+.toggle__conteiner {
+  position: relative;
+  width: 52px;
+  height: 28px;
+  background: var(--white);
+  border: 1px solid var(--grey-2);
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding: 1px;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+
+.toggle__checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:0;
+  height:0;
+  opacity: 0;
+}
+
+.toggle__slider {
+  position: absolute;
+  left: 1px;
+  width: 24px;
+  height: 24px;
+  background: var(--grey-2);
+  border-radius: 16px;
+  transition: transform 200ms linear ;
+}
+
+.toggle__label {
+  margin-left: 14px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey-4);
+}
+
+.toggle__checkbox:not(:checked) ~ .toggle__label > .toggle__label-on,
+.toggle__checkbox:disabled ~ .toggle__label > .toggle__label-on,
+.toggle__checkbox:checked ~ .toggle__label > .toggle__label-off,
+.toggle__checkbox:disabled ~ .toggle__label > .toggle__label-off,
+.toggle__checkbox:not(:disabled) ~ .toggle__label > .toggle__label-disabled {
+  display: none;
+}
+
+
+.toggle__checkbox:checked ~ .toggle__conteiner {
+  background: #4263EB;
+}
+
+.toggle__checkbox:checked ~ .toggle__conteiner > .toggle__slider {
+  background: var(--white);
+  transform: translateX(100%);
+}
+
+.toggle__checkbox:focus ~ .toggle__label {
+  text-decoration: underline;
+}
+
+
+.toggle__checkbox:disabled ~ .toggle__conteiner {
+  background: var(--grey-2);
+}
+
+.toggle__checkbox:disabled ~ .toggle__conteiner > .toggle__slider {
+  background: var(--grey-3);
+  opacity: 0.25;
+}

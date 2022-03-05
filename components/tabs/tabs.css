@@ -1,6 +1,8 @@
 #all-tab:not(:checked) ~ .tabs__content.tabs__content_all,
 #complex-tab:not(:checked) ~ .tabs__content.tabs__content_complex,
-#simple-tab:not(:checked) ~ .tabs__content.tabs__content_simple {
+#simple-tab:not(:checked) ~ .tabs__content.tabs__content_simple,
+#html-tab:not(:checked) ~ .tabs__content.tabs__html,
+#css-tab:not(:checked) ~ .tabs__content.tabs__css {
     display: none;
 }
 
@@ -38,12 +40,14 @@
 
 #all-tab:checked ~ .tabs__scroller .tabs__label[for="all-tab"],
 #complex-tab:checked ~ .tabs__scroller .tabs__label[for="complex-tab"],
-#simple-tab:checked ~ .tabs__scroller .tabs__label[for="simple-tab"] {
+#simple-tab:checked ~ .tabs__scroller .tabs__label[for="simple-tab"],
+#html-tab:checked ~ .tabs__scroller .tabs__label[for="html-tab"],
+#css-tab:checked ~ .tabs__scroller .tabs__label[for="css-tab"] {
     border-bottom: solid 5px var(--black);
     color: var(--black);
 }
 
-#all-tab, #complex-tab, #simple-tab {
+#all-tab, #complex-tab, #simple-tab, #html-tab, #css-tab  {
     position: absolute;
     top: 0;
     left: 0;
@@ -52,7 +56,24 @@
     opacity: 0;
 }
 
-@media only screen and (max-width: 768px) {
+.tabs_underlined .tabs__scroller {
+    padding-bottom: 1px;
+    border-bottom: 1px solid var(--grey-2);
+}
+
+.tabs_smaller-padding-top {
+    padding-top: 32px;
+}
+
+.tabs pre {
+    overflow-x: auto;
+}
+
+.tabs figure {
+    margin: 0;
+}
+
+@media only screen and (max-width: 1023px) {
     .tabs {
         padding-top: 32px;    
     }

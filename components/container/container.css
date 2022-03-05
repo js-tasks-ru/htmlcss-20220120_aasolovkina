@@ -3,3 +3,15 @@
     margin: 0 auto;
     padding: 0 16px;
 }
+
+.container-48 {
+    max-width: 1110px;
+    padding: 0 48px;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 1023px) {
+    .container-48 {
+        padding: 0 16px;
+    }
+}

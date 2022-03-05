@@ -5,6 +5,7 @@
     padding: 28px 36px;
     width: 100%;
     max-width: 316px;
+    box-sizing: border-box;
   }
 
 .calendar__title {
@@ -81,4 +82,11 @@
 
 .calendar_size_mini .calendar__item_between-active {
     padding: 0;
+}
+
+@media only screen and (max-width: 1023px) {
+    .calendar__item {
+        font-size: 12px;
+        line-height: 1.15;
+    }
 }

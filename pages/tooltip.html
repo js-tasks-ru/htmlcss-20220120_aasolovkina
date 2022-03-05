@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../05-lection3/01-tooltip/tooltip.css">
+    <style>
+        .template-page__content {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+
+        .template-page__content-header {
+            font-size: 28px;
+            color: var(--black);
+            font-weight: 400;
+            line-height: 1.36;
+            margin: 0;
+        }
+
+        .mt-md {
+            margin-top: 1rem;
+        }
+
+        .mb-md {
+            margin-bottom: 1rem !important;
+        }
+
+        .tabs__content {
+            padding-top: 48px;
+            padding-bottom: 48px;
+        }
+
+        .inner-page__tooltip {
+            margin: 30px 0 70px 35px;
+        }
+    </style>
+</head>
+<body class="template-page">
+    <header class="header header_transparent header_no_title">
+        <div class="container">
+            <div class="logo">
+                <svg class="logo__icon">
+                    <use href="../assets/icons/sprite.svg#logo"></use>
+                </svg>
+            </div>
+        </div>
+    </header>
+    <main class="template-page__main">
+        <div class="menu">
+            <div class="menu__title">Components</div>
+            <nav class="menu__body">
+                <a href="modal.html">Modal</a>
+                <a href="tooltip.html">Tooltip</a>
+                <a href="avatar.html">Avatar</a>
+                <a href="calendar.html">Calendar</a>
+                <a href="histogram.html">Histogram</a>
+                <a href="custom%20form%20elements.html">Custom form elements</a>
+            </nav>
+        </div>
+        <div class="template-page__content">
+            <div class="container-48">
+                <div class="template-page__content-header mb-md">
+                    Tooltip
+                </div>
+                <div class="tooltip inner-page__tooltip container mt-md">
+                    <svg class="tooltip__icon">
+                        <use href="../assets/icons/sprite.svg#question"></use>
+                    </svg>
+                    <div class="tooltip__bubble">Helper Text</div>
+                </div>
+            </div>
+            <div>
+                <div class="tabs tabs_underlined tabs_smaller-padding-top">
+                    <input type="radio" id="html-tab" name="tabs-radio" checked>
+                    <input type="radio" id="css-tab" name="tabs-radio">
+                    <div class="tabs__scroller">
+                        <div class="header">
+                            <div class="container container-48">
+                                <label class="tabs__label" for="html-tab">HTML</label>
+                                <label class="tabs__label" for="css-tab">CSS</label>
+                            </div>            
+                        </div>
+                    </div>
+                    <div class="tabs__content tabs__html container-48">
+                        <figure>
+                            <pre>
+                                <code>
+&lt;div class=&quot;tooltip&quot;&gt;
+&lt;svg class=&quot;tooltip__icon&quot;&gt;
+    &lt;use href=&quot;../../assets/icons/sprite.svg#question&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt;
+&lt;div class=&quot;tooltip__bubble&quot;&gt;Helper Text&lt;/div&gt;
+&lt;/div&gt;
+                                </code>
+                            </pre>
+                        </figure>
+                    </div>
+                    <div class="tabs__content tabs__css container-48">
+                        <figure>
+                            <pre>
+                                <code>
+.tooltip {
+    display: inline-flex;
+    position: relative;
+    }
+    
+    .tooltip__icon {
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    
+    .tooltip__bubble {
+        display: inline-flex;
+        background: #4263EB;
+        box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
+        border-radius: 10px;
+        color: var(--white);
+        padding: 10px;
+        position: absolute;
+        top: calc(100% + 8px);
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+        display: none;
+    }
+    
+    .tooltip__bubble:after {
+        content: &quot;&quot;;
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        border: 12px solid transparent;
+        border-bottom: 8px solid #4263EB;
+        transform: translateX(-50%);
+    }
+    
+    .tooltip__icon:hover ~ .tooltip__bubble,
+    .tooltip_force-show-helper .tooltip__bubble {
+        display: block;
+    }
+                                </code>
+                            </pre>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    </main>
+    <footer class="footer footer_small footer_transparent">
+        <h5 class="footer__title footer__title_small">Reusable component library</h5>
+    </footer>
+</body>
+</html>
