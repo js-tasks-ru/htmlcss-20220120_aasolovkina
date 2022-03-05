@@ -34,6 +34,7 @@
   height: 24px;
   background: var(--grey-2);
   border-radius: 16px;
+  transition: transform 200ms linear ;
 }
 
 .toggle__label {
@@ -61,8 +62,7 @@
 
 .toggle__checkbox:checked ~ .toggle__conteiner > .toggle__slider {
   background: var(--white);
-  right: 1px;
-  left: auto;
+  transform: translateX(100%);
 }
 
 .toggle__checkbox:focus ~ .toggle__label {
