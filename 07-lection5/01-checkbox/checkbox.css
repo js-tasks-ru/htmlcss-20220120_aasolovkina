@@ -20,9 +20,11 @@
     align-items: center;
     gap: 12px;
     cursor: pointer;
+    
 }
 
 .checkbox__control {
+    position: relative;
     background: var(--white);
     border: 1px solid var(--grey-2);
     border-radius: 4px;
@@ -33,6 +35,7 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .checkbox__icon {
@@ -51,6 +54,17 @@
 .checkbox__input:checked ~ .checkbox__state .checkbox__control {
     background: #4263EB;
     border-color: #4263EB;
+    animation: backlight 1s ease-in-out;
+}
+
+@keyframes backlight {
+    0% {
+        box-shadow: 0 0 0 0 rgb(189, 195, 199);
+    }
+
+    100% {
+        box-shadow: 0 0 0 1.5rem rgba(189, 195, 199, 0);
+    }
 }
 
 .checkbox__input:checked ~ .checkbox__state .checkbox__icon {
