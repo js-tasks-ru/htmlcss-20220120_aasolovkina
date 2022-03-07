@@ -17,7 +17,7 @@
     margin-top: 16px;
 }
 
-.menu__body a {
+.menu__body .next-page {
     margin-bottom: 0.25rem;
     text-decoration: none;
     cursor: pointer;
@@ -30,8 +30,8 @@
     flex-direction: column;
 }
 
-.menu__body a:active,
-.modal__menu a:active {
+.menu__body .next-page:active,
+.modal__menu .next-page:active {
     color: #D84910;
 }
 

@@ -40,7 +40,7 @@
     </style>
 </head>
 <body class="template-page">
-    <header class="header header_transparent header_no_title">
+    <header class="header header_transparent header_no_title template-page__header">
         <div class="container">
             <div class="logo">
                 <svg class="logo__icon">
@@ -53,16 +53,16 @@
         <div class="menu">
             <div class="menu__title">Components</div>
             <nav class="menu__body">
-                <a href="modal.html">Modal</a>
-                <a href="tooltip.html">Tooltip</a>
-                <a href="avatar.html">Avatar</a>
-                <a href="calendar.html">Calendar</a>
-                <a href="histogram.html">Histogram</a>
-                <a href="custom%20form%20elements.html">Custom form elements</a>
+                <a href="modal.html" class="next-page">Modal</a>
+                <a href="tooltip.html" class="next-page">Tooltip</a>
+                <a href="avatar.html" class="next-page">Avatar</a>
+                <a href="calendar.html" class="next-page">Calendar</a>
+                <a href="histogram.html" class="next-page">Histogram</a>
+                <a href="custom%20form%20elements.html" class="next-page">Custom form elements</a>
             </nav>
         </div>
         <div class="template-page__content">
-            <div class="container-48">
+            <div class="container_padding_lg">
                 <div class="template-page__content-header mb-md">
                     Avatar
                 </div>
@@ -77,15 +77,15 @@
                     <input type="radio" id="css-tab" name="tabs-radio">
                     <div class="tabs__scroller">
                         <div class="header">
-                            <div class="container container-48">
+                            <div class="container container_padding_lg">
                                 <label class="tabs__label" for="html-tab">HTML</label>
                                 <label class="tabs__label" for="css-tab">CSS</label>
                             </div>            
                         </div>
                     </div>
-                    <div class="tabs__content tabs__html container-48">
-                        <figure>
-                            <pre>
+                    <div class="tabs__content tabs__html container_padding_lg">
+                        <figure class="tabs__code">
+                            <pre class="tabs__code-html">
                                 <code>
 &lt;div class=&quot;avatar&quot;&gt;
 &lt;img src=&quot;./public/avatar-200.jpg&quot; class=&quot;avatar__img&quot; alt=&quot;img&quot;&gt; 
@@ -94,9 +94,9 @@
                             </pre>
                         </figure>
                     </div>
-                    <div class="tabs__content tabs__css container-48">
-                        <figure>
-                            <pre>
+                    <div class="tabs__content tabs__css container_padding_lg">
+                        <figure class="tabs__code">
+                            <pre class="tabs__code-css">
                                 <code>
 .avatar {
 height: 102px;
