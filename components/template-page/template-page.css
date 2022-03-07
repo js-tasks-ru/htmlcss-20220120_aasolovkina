@@ -7,7 +7,7 @@
     background-color: #F9FAFC;
 }
 
-.template-page .header {
+.template-page__header {
     flex-shrink: 0;
 }
 

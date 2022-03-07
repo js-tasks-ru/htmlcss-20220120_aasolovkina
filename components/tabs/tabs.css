@@ -65,12 +65,12 @@
     padding-top: 32px;
 }
 
-.tabs .code__html,
-.tabs .code__css, {
+.tabs .tabs__codecode-html,
+.tabs .tabs__codecode-css {
     overflow-x: auto;
 }
 
-.tabs .code {
+.tabs .tabs__code {
     margin: 0;
 }
 
