@@ -12,10 +12,7 @@
   box-sizing: border-box;
   border-radius: 16px;
   padding: 1px;
-  -webkit-transition: background-color 2s ease-out;
-  -moz-transition: background-color 2s ease-out;
-  -o-transition: background-color 2s ease-out;
-  transition: background-color 2s ease-out;
+  transition: background-color 0.5s ease-out;
 }
 
 .toggle__checkbox {
@@ -58,6 +55,7 @@
 
 .toggle__checkbox:checked ~ .toggle__conteiner {
   background: #4263EB;
+  border: 1px solid #4263EB;
 }
 
 .toggle__checkbox:checked ~ .toggle__conteiner > .toggle__slider {
