@@ -1,5 +1,5 @@
 .histogram {
-    background: var(--white);
+    background: var(--white-bg);
     border: 1px solid var(--grey-3);
     box-sizing: border-box;
     border-radius: 8px;
@@ -13,7 +13,7 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
-    color: var(--black);
+    color: var(--text-secondary);
     opacity: 0.8;
 }
 
@@ -37,7 +37,7 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 26px;
-    color: var(--black);
+    color: var(--text-primary);
 }
 
 .histogram__lines {

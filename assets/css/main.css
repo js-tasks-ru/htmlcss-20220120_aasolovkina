@@ -28,7 +28,30 @@
 
     --primary: var(--blue);
     --secondary: var(--purple);
+
+    --main-bg: var(--white);
+    --preview-bg: #F9FAFC;
+    --logo-color: var(--black);
+    --active-text-color: var(--black);
+    --dark-bg: var(--black);
+    --font-color: var(--black);
+    --card-bg: var(--white);
+    --white-bg: var(--white);
+    --text-primary: var(--black);
+    --text-secondary: var(--grey-3);
 }
+            
+html[data-theme-dark] {
+    --main-bg: var(--black);
+    --preview-bg: var(--grey-4);
+    --logo-color: var(--grey-1);
+    --active-text-color: var(--grey-2);
+    --dark-bg: var(--grey-2);
+    --font-color: #ffffff75;
+    --card-bg: var(--black);
+    --white-bg: var(--black);
+    --text-primary: var(--white);
+}          
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -40,9 +63,9 @@ html, body {
 
 main {
     min-height: 400px;
-    background: #F9FAFC;
+    background: var(--preview-bg);
 }
 
 .page {
-    background: #F9FAFC;
+    background: var(--preview-bg);
 }

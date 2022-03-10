@@ -8,7 +8,7 @@
 
 .tabs {
     padding-top: 40px; 
-    background: var(--white);   
+    background: var(--main-bg);   
 }
 
 .tabs__scroller > .header {
@@ -43,8 +43,8 @@
 #simple-tab:checked ~ .tabs__scroller .tabs__label[for="simple-tab"],
 #html-tab:checked ~ .tabs__scroller .tabs__label[for="html-tab"],
 #css-tab:checked ~ .tabs__scroller .tabs__label[for="css-tab"] {
-    border-bottom: solid 5px var(--black);
-    color: var(--black);
+    border-bottom: solid 5px var(--dark-bg);
+    color: var(--active-text-color);
 }
 
 #all-tab, #complex-tab, #simple-tab, #html-tab, #css-tab  {

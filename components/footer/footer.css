@@ -1,6 +1,6 @@
 .footer {
     height: 300px;
-    background: var(--white);
+    background: var(--main-bg);
     padding: 71px 0;
 }
 
@@ -10,7 +10,7 @@
     font-weight: 500;
     font-size: 38px;
     line-height: 48px;
-    color: var(--black);
+    color: var(--font-color);
     margin: 0;
     text-align: center;
 }
@@ -22,7 +22,7 @@
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-    color: var(--black);
+    color: var(--font-color);
     width: 640px;
     margin: 32px auto 0 auto;
 }
