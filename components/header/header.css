@@ -1,6 +1,6 @@
 .header {
     padding: 25px 0 0;
-    background: var(--white);
+    background: var(--main-bg);
     position: relative;
 }
 
@@ -17,7 +17,7 @@
     font-weight: 500;
     font-size: 50px;
     line-height: 64px;
-    color: var(--black);
+    color: var(--font-color);
     margin: 37px 0 0 0;
 }
 
@@ -32,6 +32,12 @@
 
 .header_no_title > .container {
     display: none;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 @media only screen and (max-width: 1023px) {
