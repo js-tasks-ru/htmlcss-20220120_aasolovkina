@@ -55,3 +55,32 @@
 .skeleton__line_longer {
     width: 60%;
 }
+
+.skeleton__avatar,
+.skeleton__line_short,
+.skeleton__line_longer,
+.skeleton__line {
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: backgroundMovement;
+    animation-timing-function: linear;
+    background: var(--grey-2);
+    background: linear-gradient(267.58deg, var(--grey-2) 0%, var(--grey-1) 80%, var(--grey-2) 100%);
+    background-size: 200%;
+    display: inline-block;
+}
+
+.skeleton__note .skeleton__line {
+    width: 100%;
+}
+
+@keyframes backgroundMovement {
+    0% {
+        background-position: 100%;
+    }
+
+    100% {
+        background-position: -100%;
+    }
+}
